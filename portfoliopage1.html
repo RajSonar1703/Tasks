@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfoliopage1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="heading">
+        <section id="home">
+            <h1 id="heading1">My Portfolio</h1>
+            <nav >
+                <ul>
+                    <li><a class="head1" href="about.html">About</a></li>
+                    <li><a class="head1" href="project.html">Projects</a></li>
+                    <li><a class="head1" href="contact.html">Contact</a></li>
+                    <li><a class="head1" href="#home">Home</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <section id="about">
+        <div id="about1">
+            <h2 id="abtme">About Me</h2>
+            <img src="webdevloper.png" class="image1">
+        </div>    
+        <p>Hello! I am <span id="name1">Raj Sonar</span>, a Web-Developer with a passion for creating beautiful and functional Websites.</p>
+        <div>
+            I am perceiving Batchlors degree in IT field in Government College of Engineering Aurangabad.
+            I had completed C , C++ , Java , Python languages .
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 id="title1">Projects</h2>
+        <div class="project" onclick="openModal('project1')">
+            <h3>Project 1 :</h3>
+            <h4 class="head3">Response Landing Page</h4>
+            <p class="para">
+                I use Html css and Javascript for this project.
+                This web page is divided in three phase header main and footer .
+                This project is basically a Response landing means proper communicaive project
+                where we can shift one page to another for detail information.
+            </p>
+        </div>
+        <div class="project" onclick="openModal('project2')">
+            <h3>Project 2 :</h3>
+            <h4 class="head3">
+                StopWatch Web Application
+            </h4>
+            <p class="para">
+                StopWatch project is a program where we can manipulate 
+                the time according to situation for any events to measure the time 
+                for example if we want the time required to complete the race .
+                 With the help of this web application we can calculate the time 
+            </p>
+        </div>
+        <div class="project" onclick="openModal('project3')">
+            <h3>Project 3 :</h3>
+            <h4 class="head3">Tic Tac Toe Web Application</h4>
+            <p class="para">
+                This project is a simple type of Game for playing 
+                this is derived from the game which we were playing at our childhood
+                the main working of this application is done by Javascript.
+                The main logic is checking of all the winning pattern of this game so 
+                compairing all the possibility of winning and draw.
+            </p>
+        </div>
+        <div class="project" onclick="openModal('project4')">
+            <h3>Project 4 :</h3>
+            <h4 class="head3">Personal Portfolio Page</h4>
+            <p class="para">
+                This page is about personal detail in one page .Structure is :
+                Header
+                Name and Title:
+                Display your full name prominently at the top.
+                Contact Information.
+                Provide a simple and direct way for people to contact you.
+                About Me
+                Introduction:
+
+                Share your professional mission or philosophy.
+
+                Featured Projects.
+                Technical Skills.
+                Soft Skills.
+                Certifications and Courses.
+                Industry Insights.
+                Contact
+                Contact Form.
+                Social Media Links.
+                Footer
+                Additional Links.
+                Copyright and Credits.
+                Responsive Design.
+                Consistent Branding.
+                User Experience.
+            </p>
+        </div>
+        <div class="project" onclick="openModal('project5')">
+            <h3>Project 5 :</h3>
+            <h4 class="head3">Weather App</h4>
+            <p class="para">
+                Description: The Weather Web Application is a dynamic 
+                and user-friendly platform designed to provide real-time 
+                weather updates and forecasts for any location worldwide. 
+                The application utilizes API integration to fetch and display current weather data
+                , future forecasts, and historical weather information.
+            </p>
+        </div>
+    </section>
+    <hr>
+
+    <section id="contact">
+        <h2 id="contact1">Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Raj Sonar. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="portfoliopage1.js"></script>
+</body>
+</html>
